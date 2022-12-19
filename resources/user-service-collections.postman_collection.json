@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "058c1aa4-b3ac-4d62-8e46-4982938dd0e2",
+		"name": "user-service-collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22473977"
+	},
+	"item": [
+		{
+			"name": "GET-User-WS",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm1vbEBnbWFpbC5jb20iLCJleHAiOjE2NzIxNTI2MTR9.JMPTWZ1HVSg-RZk5xFNRH1cl_36c8rJ1NuivvkgV2ETeN3db-BdXEJtGLR7gwkGcFoDZyH8-vi_MEtgqfJd4yw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users/SKt1XeTN0HPvX0LnW0dsElNKFP5OMD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"SKt1XeTN0HPvX0LnW0dsElNKFP5OMD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-User-WS",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Anmol\",\n    \"lastName\": \"Anmol\",\n    \"email\": \"anmol@gmail.com\",\n    \"password\": \"anmol@123\",\n    \"addresses\": [\n        {\n            \"city\": \"Frictional\",\n            \"country\": \"Dholak Pur\",\n            \"streetName\": \"Dholak Pur\",\n            \"postalCode\": \"110062\",\n            \"type\": \"Shipping\"\n        },\n        { \n            \"city\": \"Frictional\",\n            \"country\": \"Dholak Pur\",\n            \"streetName\": \"Dholak Pur\",\n            \"postalCode\": \"110062\",\n            \"type\": \"Billing\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-User-WS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-User-WS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login-API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"anmol@gmail.com\",\n    \"password\": \"anmol@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-All-Records",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

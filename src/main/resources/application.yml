@@ -1,0 +1,24 @@
+logging:
+    level:
+        org:
+            hibernate:
+                SQL: DEBUG
+                type:
+                    descriptor:
+                        sql:
+                            BasicBinder: TRACE
+server:
+    error:
+        include-message: always
+spring:
+    datasource:
+        password: Pass@123
+        url: jdbc:mysql://localhost:3306/user_service_management
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+tokenSecret: jf9i4jgu83nfl0
